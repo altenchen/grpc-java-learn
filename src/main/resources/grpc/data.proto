@@ -1,0 +1,25 @@
+syntax = "proto3";
+
+//和对接端，如python端protoc的package配置必须一致
+package example;
+
+option java_package = "proto";
+option java_outer_classname = "GrpcTestServiceProto";
+option java_multiple_files = true;
+
+service TestService
+{
+  rpc method(Request) returns (Result){}
+}
+
+message Request
+{
+  string request1 = 1;
+  string request2 = 2;
+}
+
+message Result
+{
+  string result1 = 1;
+  string result2 = 2;
+}

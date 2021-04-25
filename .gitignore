@@ -1,0 +1,16 @@
+*.iml
+.idea/
+*~
+.classpath
+.classes
+.project
+.settings/
+logs/
+target/
+*.log
+*.log.*
+logsBakup
+/derby.log
+.settings
+.DS_Store
+*.gz
